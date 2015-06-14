@@ -1,0 +1,20 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1433956178237
+Build-Jdk: 1.7.0_79
+Built-By: wayko
+Bundle-Activator: handler.Activator
+Bundle-ClassPath: .,sal-0.7.0.jar,mydpi-1.0.jar,mydpi-1.0.jar
+Bundle-ManifestVersion: 2
+Bundle-Name: myHandler
+Bundle-SymbolicName: org.opendaylight.controller.myHandler
+Bundle-Version: 0.1.0
+Created-By: Apache Maven Bundle Plugin
+Embed-Dependency: scope=compile|runtime
+Embedded-Artifacts: sal-0.7.0.jar;g="org.opendaylight.controller";a="sal
+ ";v="0.7.0",mydpi-1.0.jar;g="jni.ndpi";a="mydpi";v="1.0"
+Export-Package: handler;uses:="org.apache.felix.dm";version="0.1.0"
+Import-Package: javax.xml.bind.annotation,org.apache.commons.lang3.tuple
+ ;version="[3.1,4)",org.apache.felix.dm;version="[3.0,4)",org.osgi.frame
+ work;version="[1.5,2)",org.slf4j;version="[1.7,2)"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.7))"
+Tool: Bnd-2.3.0.201405100607
