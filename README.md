@@ -1,2 +1,2 @@
-# ndpi-odl
+# nDPI - OpenDaylight
 nDPI-OpenDaylight
